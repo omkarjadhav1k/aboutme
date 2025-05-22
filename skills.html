@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Skills</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #0077cc;
+      color: white;
+    }
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .skill-box {
+      background: white;
+      border-radius: 12px;
+      padding: 200px;
+      width: 180px;
+      box-shadow: 0 4px 120px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .skill-logo {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+
+    .circle {
+      position: relative;
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 100px;
+    }
+
+    .circle svg {
+      transform: rotate(-90deg);
+    }
+
+    .circle circle {
+      fill: none;
+      stroke-width: 10;
+      stroke-linecap: round;
+    }
+
+    .circle .bg {
+      stroke: #e6e6e6;
+    }
+
+    .circle .progress {
+      stroke: #0077cc;
+      stroke-dasharray: 314; /* 2 * π * r (r=50) */
+      stroke-dashoffset: 0;
+      transition: stroke-dashoffset 1s ease;
+    }
+
+    .circle .value {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .skill-name {
+      font-weight: 600;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Skills</h1>
+    <p>Technologies and tools I'm experienced with</p>
+  </header>
+
+  <div class="skills-container">
+    
+    <!-- HTML -->
+    <div class="skill-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" class="skill-logo" alt="HTML">
+      <div class="circle">
+        <svg width="100" height="100">
+          <circle class="bg" cx="50" cy="50" r="50"/>
+          <circle class="progress" cx="50" cy="50" r="50" style="stroke-dashoffset: 31.4;"></circle>
+        </svg>
+        <div class="value">90%</div>
+      </div>
+      <div class="skill-name">HTML</div>
+    </div>
+
+    <!-- CSS -->
+    <div class="skill-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" class="skill-logo" alt="CSS">
+      <div class="circle">
+        <svg width="100" height="100">
+          <circle class="bg" cx="50" cy="50" r="50"/>
+          <circle class="progress" cx="50" cy="50" r="50" style="stroke-dashoffset: 47.1;"></circle>
+        </svg>
+        <div class="value">85%</div>
+      </div>
+      <div class="skill-name">CSS</div>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="skill-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" class="skill-logo" alt="JS">
+      <div class="circle">
+        <svg width="100" height="100">
+          <circle class="bg" cx="50" cy="50" r="50"/>
+          <circle class="progress" cx="50" cy="50" r="50" style="stroke-dashoffset: 62.8;"></circle>
+        </svg>
+        <div class="value">80%</div>
+      </div>
+      <div class="skill-name">JavaScript</div>
+    </div>
+
+    <!-- Python -->
+    <div class="skill-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" class="skill-logo" alt="Python">
+      <div class="circle">
+        <svg width="100" height="100">
+          <circle class="bg" cx="50" cy="50" r="50"/>
+          <circle class="progress" cx="50" cy="50" r="50" style="stroke-dashoffset: 94.2;"></circle>
+        </svg>
+        <div class="value">70%</div>
+      </div>
+      <div class="skill-name">Python</div>
+    </div>
+
+  </div>
+
+</body>
+</html>

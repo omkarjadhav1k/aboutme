@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #0077cc;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .contact-form, .contact-info {
+      flex: 1 1 400px;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #005fa3;
+    }
+
+    .contact-info h3 {
+      margin-top: 0;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0077cc;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Me</h1>
+    <p>I'd love to hear from you! Reach out through the form or info below.</p>
+  </header>
+
+  <div class="container">
+    <div class="contact-section">
+      <div class="contact-form">
+        <form action="https://formspree.io/f/mkgrenrr" method="POST">
+  <label for="name">Name</label>
+  <input type="text" name="name" required>
+
+  <label for="email">Email</label>
+  <input type="email" name="email" required>
+
+  <label for="message">Message</label>
+  <textarea name="message" rows="5" required></textarea>
+
+  <button type="submit">Send Message</button>
+</form>
+
+      </div>
+
+      <div class="contact-info">
+        <h3>My Contact Info</h3>
+        <p><strong>Email:</strong> omkarjadhav1k@gmail.com</p>
+        <p><strong>Phone:</strong> +91-9699779276</p>
+        <p><strong>Address:</strong>Shirur, Pune, Maharashtra, India</p>
+        <p><strong>LinkedIn:</strong> <a href="www.linkedin.com/in/omkarjadhv1k" target="_blank">www.linkedin.com/in/omkarjadhv1k</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/omkarjadhav1k" target="_blank">https://github.com/omkarjadhav1k</a></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Omkar Jadhav. All rights reserved.
+  </footer>
+
+</body>
+</html>
